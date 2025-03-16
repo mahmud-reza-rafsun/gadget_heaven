@@ -1,0 +1,199 @@
+[
+  {
+    "id": 1,
+    "category": "Laptop",
+    "name": "Dell XPS 15",
+    "model_name": "XPS 15 9530",
+    "image": "https://files.catbox.moe/dwydiq.jpg",
+    "price": 1800,
+    "status": "In Stock",
+    "description": "A powerful laptop with a sleek design and high performance.",
+    "Specification": [
+      "Intel Core i7",
+      "16GB RAM",
+      "512GB SSD",
+      "NVIDIA RTX 4050"
+    ],
+    "rating": 4.7
+  },
+  {
+    "id": 2,
+    "category": "Laptop",
+    "name": "HP Spectre x360",
+    "model_name": "14-ea0023dx",
+    "image": "https://files.catbox.moe/62mvx6.jpeg",
+    "price": 1600,
+    "status": "Out of Stock",
+    "description": "A premium convertible laptop with a stunning OLED display.",
+    "Specification": [
+      "Intel Core i7",
+      "16GB RAM",
+      "1TB SSD",
+      "14-inch OLED Touchscreen"
+    ],
+    "rating": 4.7
+  },
+  {
+    "id": 3,
+    "category": "Phone",
+    "name": "Samsung Galaxy S24 Ultra",
+    "model_name": "SM-S928B",
+    "image": "https://files.catbox.moe/mqvi9c.webp",
+    "price": 1400,
+    "status": "In Stock",
+    "description": "A high-end smartphone with advanced camera features.",
+    "Specification": [
+      "Snapdragon 8 Gen 3",
+      "12GB RAM",
+      "256GB Storage",
+      "200MP Camera"
+    ],
+    "rating": 4.8
+  },
+  {
+    "id": 4,
+    "category": "Phone",
+    "name": "Google Pixel 8 Pro",
+    "model_name": "GA04841",
+    "image": "https://files.catbox.moe/jcpzs9.jpg",
+    "price": 1300,
+    "status": "Out of Stock",
+    "description": "Google's latest flagship with AI-powered camera features.",
+    "Specification": [
+      "Google Tensor G3",
+      "12GB RAM",
+      "256GB Storage",
+      "50MP Camera"
+    ],
+    "rating": 4.7
+  },
+  {
+    "id": 5,
+    "category": "Accessories",
+    "name": "Logitech MX Master 3S",
+    "model_name": "MX Master 3S",
+    "image": "https://files.catbox.moe/oo8lk7.webp",
+    "price": 120,
+    "status": "In Stock",
+    "description": "An ergonomic wireless mouse with precision tracking.",
+    "Specification": ["Bluetooth", "USB-C Charging", "8000 DPI"],
+    "rating": 4.6
+  },
+  {
+    "id": 6,
+    "category": "Accessories",
+    "name": "Razer BlackShark V2",
+    "model_name": "BlackShark V2",
+    "image": "https://files.catbox.moe/yrkw1t.jpg",
+    "price": 100,
+    "status": "Out of Stock",
+    "description": "A high-quality gaming headset with THX spatial audio.",
+    "Specification": ["Wired", "USB Sound Card", "50mm Drivers"],
+    "rating": 4.5
+  },
+  {
+    "id": 7,
+    "category": "Smart Watch",
+    "name": "Apple Watch Series 9",
+    "model_name": "A2983",
+    "image": "https://files.catbox.moe/yl2f3w.jpg",
+    "price": 500,
+    "status": "In Stock",
+    "description": "A premium smartwatch with advanced health tracking features.",
+    "Specification": ["Always-on Retina display", "ECG", "Blood Oxygen Sensor"],
+    "rating": 4.9
+  },
+  {
+    "id": 8,
+    "category": "Smart Watch",
+    "name": "Samsung Galaxy Watch 6",
+    "model_name": "SM-R960",
+    "image": "https://files.catbox.moe/s4axj0.webp",
+    "price": 400,
+    "status": "Out of Stock",
+    "description": "A powerful smartwatch with Wear OS and long battery life.",
+    "Specification": [
+      "Super AMOLED Display",
+      "ECG",
+      "Blood Pressure Monitoring"
+    ],
+    "rating": 4.6
+  },
+  {
+    "id": 9,
+    "category": "MacBook",
+    "name": "MacBook Pro 16 M3",
+    "model_name": "M3 Pro 16-inch",
+    "image": "https://files.catbox.moe/vze5cy.webp",
+    "price": 2500,
+    "status": "In Stock",
+    "description": "A powerful MacBook with Apple's M3 Pro chip.",
+    "Specification": [
+      "M3 Pro",
+      "32GB RAM",
+      "1TB SSD",
+      "Liquid Retina XDR Display"
+    ],
+    "rating": 4.9
+  },
+  {
+    "id": 10,
+    "category": "MacBook",
+    "name": "MacBook Air 15 M2",
+    "model_name": "M2 15-inch",
+    "image": "https://files.catbox.moe/n48q00.jpg",
+    "price": 1500,
+    "status": "Out of Stock",
+    "description": "A thin and light MacBook Air with M2 chip.",
+    "Specification": ["M2", "16GB RAM", "512GB SSD", "Liquid Retina Display"],
+    "rating": 4.8
+  },
+  {
+    "id": 11,
+    "category": "iPhone",
+    "name": "iPhone 15 Pro Max",
+    "model_name": "A3102",
+    "image": "https://files.catbox.moe/dy1adk.jpg",
+    "price": 1600,
+    "status": "In Stock",
+    "description": "Apple's flagship smartphone with a titanium design.",
+    "Specification": ["A17 Pro", "8GB RAM", "512GB Storage", "48MP Camera"],
+    "rating": 4.9
+  },
+  {
+    "id": 12,
+    "category": "iPhone",
+    "name": "iPhone 14",
+    "model_name": "A2896",
+    "image": "https://files.catbox.moe/lz6ulm.webp",
+    "price": 900,
+    "status": "Out of Stock",
+    "description": "A great value iPhone with improved battery life.",
+    "Specification": ["A15 Bionic", "6GB RAM", "256GB Storage", "12MP Camera"],
+    "rating": 4.6
+  },
+  {
+    "id": 13,
+    "category": "Laptop",
+    "name": "Asus ROG Zephyrus G14",
+    "model_name": "GA402XV",
+    "image": "https://files.catbox.moe/gjup0g.webp",
+    "price": 2200,
+    "status": "In Stock",
+    "description": "A compact gaming laptop with powerful specs.",
+    "Specification": ["AMD Ryzen 9", "32GB RAM", "1TB SSD", "RTX 4070"],
+    "rating": 4.8
+  },
+  {
+    "id": 14,
+    "category": "Accessories",
+    "name": "Keychron K8 Pro",
+    "model_name": "K8 Pro",
+    "image": "https://files.catbox.moe/4q8e03.webp",
+    "price": 120,
+    "status": "Out of Stock",
+    "description": "A wireless mechanical keyboard with hot-swappable switches.",
+    "Specification": ["Bluetooth 5.1", "Gateron Switches", "RGB Backlit"],
+    "rating": 4.7
+  }
+]
