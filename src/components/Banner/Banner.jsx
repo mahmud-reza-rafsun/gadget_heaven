@@ -5,8 +5,8 @@ const Banner = () => {
     <div>
       <div className="bg-[#9538e2] h-[420px] lg:h-[550px]">
         <div className=" max-w-6xl mt-12 mx-auto text-white">
-          <div className="px-12 lg:px-52 py-12 text-center space-y-4">
-            <h2 className="text-3xl lg:text-4xl font-bold">
+          <div className="px-8 lg:px-52 py-12 text-center space-y-4">
+            <h2 className="text-2xl lg:text-4xl font-bold">
               Upgrade Your Tech Accessorize with Gadget Heaven Accessories
             </h2>
             <p>

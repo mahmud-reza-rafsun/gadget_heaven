@@ -3,6 +3,8 @@ import Root from "../Layout/Root";
 import Home from "../Page/Home";
 import GadgetCards from "../components/GadgetCards/GadgetCards";
 import Statistics from "../Page/Statistics";
+import Dashboard from "../Page/Dashboard";
+import GadgetDetails from "../components/GadgetDetails/GadgetDetails";
 
 const router = createBrowserRouter([
   {
@@ -27,11 +29,17 @@ const router = createBrowserRouter([
         ],
       },
       {
+        path: "/gadgetDetails/:category",
+        element: <GadgetDetails />,
+        loader: () => fetch(`../product.json`),
+      },
+      {
         path: "/statistics",
         element: <Statistics />,
       },
       {
         path: "/dashboard",
+        element: <Dashboard />,
       },
     ],
   },

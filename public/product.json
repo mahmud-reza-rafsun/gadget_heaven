@@ -8,7 +8,7 @@
     "price": 1800,
     "status": "In Stock",
     "description": "A powerful laptop with a sleek design and high performance.",
-    "Specification": [
+    "specification": [
       "Intel Core i7",
       "16GB RAM",
       "512GB SSD",
@@ -25,7 +25,7 @@
     "price": 1600,
     "status": "Out of Stock",
     "description": "A premium convertible laptop with a stunning OLED display.",
-    "Specification": [
+    "specification": [
       "Intel Core i7",
       "16GB RAM",
       "1TB SSD",
@@ -42,7 +42,7 @@
     "price": 1400,
     "status": "In Stock",
     "description": "A high-end smartphone with advanced camera features.",
-    "Specification": [
+    "specification": [
       "Snapdragon 8 Gen 3",
       "12GB RAM",
       "256GB Storage",
@@ -59,7 +59,7 @@
     "price": 1300,
     "status": "Out of Stock",
     "description": "Google's latest flagship with AI-powered camera features.",
-    "Specification": [
+    "specification": [
       "Google Tensor G3",
       "12GB RAM",
       "256GB Storage",
@@ -76,7 +76,7 @@
     "price": 120,
     "status": "In Stock",
     "description": "An ergonomic wireless mouse with precision tracking.",
-    "Specification": ["Bluetooth", "USB-C Charging", "8000 DPI"],
+    "specification": ["Bluetooth", "USB-C Charging", "8000 DPI"],
     "rating": 4.6
   },
   {
@@ -88,7 +88,7 @@
     "price": 100,
     "status": "Out of Stock",
     "description": "A high-quality gaming headset with THX spatial audio.",
-    "Specification": ["Wired", "USB Sound Card", "50mm Drivers"],
+    "specification": ["Wired", "USB Sound Card", "50mm Drivers"],
     "rating": 4.5
   },
   {
@@ -100,7 +100,7 @@
     "price": 500,
     "status": "In Stock",
     "description": "A premium smartwatch with advanced health tracking features.",
-    "Specification": ["Always-on Retina display", "ECG", "Blood Oxygen Sensor"],
+    "specification": ["Always-on Retina display", "ECG", "Blood Oxygen Sensor"],
     "rating": 4.9
   },
   {
@@ -112,7 +112,7 @@
     "price": 400,
     "status": "Out of Stock",
     "description": "A powerful smartwatch with Wear OS and long battery life.",
-    "Specification": [
+    "specification": [
       "Super AMOLED Display",
       "ECG",
       "Blood Pressure Monitoring"
@@ -128,7 +128,7 @@
     "price": 2500,
     "status": "In Stock",
     "description": "A powerful MacBook with Apple's M3 Pro chip.",
-    "Specification": [
+    "specification": [
       "M3 Pro",
       "32GB RAM",
       "1TB SSD",
@@ -145,7 +145,7 @@
     "price": 1500,
     "status": "Out of Stock",
     "description": "A thin and light MacBook Air with M2 chip.",
-    "Specification": ["M2", "16GB RAM", "512GB SSD", "Liquid Retina Display"],
+    "specification": ["M2", "16GB RAM", "512GB SSD", "Liquid Retina Display"],
     "rating": 4.8
   },
   {
@@ -157,7 +157,7 @@
     "price": 1600,
     "status": "In Stock",
     "description": "Apple's flagship smartphone with a titanium design.",
-    "Specification": ["A17 Pro", "8GB RAM", "512GB Storage", "48MP Camera"],
+    "specification": ["A17 Pro", "8GB RAM", "512GB Storage", "48MP Camera"],
     "rating": 4.9
   },
   {
@@ -169,7 +169,7 @@
     "price": 900,
     "status": "Out of Stock",
     "description": "A great value iPhone with improved battery life.",
-    "Specification": ["A15 Bionic", "6GB RAM", "256GB Storage", "12MP Camera"],
+    "specification": ["A15 Bionic", "6GB RAM", "256GB Storage", "12MP Camera"],
     "rating": 4.6
   },
   {
@@ -181,7 +181,7 @@
     "price": 2200,
     "status": "In Stock",
     "description": "A compact gaming laptop with powerful specs.",
-    "Specification": ["AMD Ryzen 9", "32GB RAM", "1TB SSD", "RTX 4070"],
+    "specification": ["AMD Ryzen 9", "32GB RAM", "1TB SSD", "RTX 4070"],
     "rating": 4.8
   },
   {
@@ -193,7 +193,7 @@
     "price": 120,
     "status": "Out of Stock",
     "description": "A wireless mechanical keyboard with hot-swappable switches.",
-    "Specification": ["Bluetooth 5.1", "Gateron Switches", "RGB Backlit"],
+    "specification": ["Bluetooth 5.1", "Gateron Switches", "RGB Backlit"],
     "rating": 4.7
   }
 ]
