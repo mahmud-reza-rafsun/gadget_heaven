@@ -1,19 +1,20 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import { FaRegHeart } from "react-icons/fa6";
 import { PiShoppingCartLight } from "react-icons/pi";
-import { setAddToCart } from "../../Utility";
+import { setAddToCart, setAddWishlist } from "../../Utility";
 
 const GadgetDetails = () => {
   const data = useLoaderData();
   const { category } = useParams();
 
   const allGadgets = data.find((product) => product.id == category);
-  console.log(allGadgets);
-
   const { name, image, price, rating, status, specification, description } =
     allGadgets || {};
   const handleAddToCart = (allGadgets) => {
     setAddToCart(allGadgets);
+  };
+  const handleAddWishlist = (allGadgets) => {
+    setAddWishlist(allGadgets);
   };
   return (
     <div className="mt-16 bg-[#9538e2] py-16">
@@ -107,8 +108,10 @@ const GadgetDetails = () => {
                     </span>
                   </button>
                 </div>
-                <div className={`p-3 bg-gray-100 rounded-full`}>
-                  <FaRegHeart />
+                <div className={`p-3 bg-gray-100 rounded-full cursor-pointer`}>
+                  <span onClick={() => handleAddWishlist(allGadgets)}>
+                    <FaRegHeart />
+                  </span>
                 </div>
               </div>
             </div>

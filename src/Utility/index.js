@@ -23,7 +23,40 @@ const removeAddToCart = (id) => {
   const storedAddToCart = getAddToCart();
   const removeAddToCart = storedAddToCart.filter((items) => items.id !== id);
   localStorage.removeItem("add-cart", JSON.stringify(removeAddToCart));
-  toast.success(`Successfully Added`);
+  toast.success(`Remove Successfully`);
 };
 
-export { setAddToCart, getAddToCart, removeAddToCart };
+const getAddTWishlist = () => {
+  const storedWishlist = localStorage.getItem("wishlist");
+  if (storedWishlist) {
+    const storedCartStr = JSON.parse(storedWishlist);
+    return storedCartStr;
+  } else {
+    return [];
+  }
+};
+
+const setAddWishlist = (allGadgets) => {
+  const storedWishlist = getAddTWishlist();
+  const isExist = storedWishlist.find((cart) => cart.id === allGadgets.id);
+  if (isExist) return toast.error(`${allGadgets.name} Already Added`);
+  storedWishlist.push(allGadgets);
+  localStorage.setItem("wishlist", JSON.stringify(storedWishlist));
+  toast.success(`${allGadgets.name} Successfully Added`);
+};
+
+const removeWishlist = (id) => {
+  const storedAddToCart = getAddToCart();
+  const removeAddToCart = storedAddToCart.filter((items) => items.id !== id);
+  localStorage.removeItem("add-cart", JSON.stringify(removeAddToCart));
+  toast.success(`Remove Successfully`);
+};
+
+export {
+  setAddToCart,
+  getAddToCart,
+  removeAddToCart,
+  setAddWishlist,
+  getAddTWishlist,
+  removeWishlist,
+};

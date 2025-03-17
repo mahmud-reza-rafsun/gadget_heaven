@@ -5,18 +5,18 @@ import { getAddToCart, removeAddToCart } from "../Utility";
 import { GoTrash } from "react-icons/go";
 
 const Dashboard = () => {
-  const [gadgets, setGadgets] = useState([]);
+  const [cart, setCart] = useState([]);
+  console.log(cart.id);
   useEffect(() => {
     const setAddCart = getAddToCart();
-    setGadgets(setAddCart);
+    setCart(setAddCart);
   }, []);
+
   const deleteAddToCart = (id) => {
+    console.log(id);
     removeAddToCart(id);
     const removeCart = getAddToCart();
-    setGadgets(removeCart);
-  };
-  const sortByPrice = () => {
-    console.log("sort");
+    setCart(removeCart);
   };
   return (
     <div className="">
@@ -57,10 +57,7 @@ const Dashboard = () => {
                           <h2 className="text-lg font-semibold">Price</h2>
                         </div>
                         <div className="flex gap-3 items-center">
-                          <button
-                            onClick={() => sortByPrice()}
-                            className="btn rounded-4xl bg-white border border-[#9538e2] text-[#9538e2]"
-                          >
+                          <button className="btn rounded-4xl bg-white border border-[#9538e2] text-[#9538e2]">
                             Sort by Pirce
                           </button>
                           <button className="btn rounded-4xl bg-[#9538e2] border border-[#9538e2] text-white">
@@ -71,28 +68,26 @@ const Dashboard = () => {
                     </div>
                   </div>
                   <div>
-                    {gadgets.map((gadget) => (
+                    {cart.map((cart) => (
                       <div
-                        key={gadget.id}
+                        key={cart.id}
                         className="bg-white my-5 p-6 flex justify-between items-center rounded-md text-black"
                       >
                         <div className="flex gap-6">
                           <div>
                             <img
                               className="w-[150px] h-[100px] object-cover rounded-md"
-                              src={gadget.image}
+                              src={cart.image}
                               alt=""
                             />
                           </div>
                           <div className="text-left space-y-2">
                             <h1 className="text-xl font-semibold">
-                              {gadget.name}
+                              {cart.name}
                             </h1>
-                            <p className="text-gray-500">
-                              {gadget.description}
-                            </p>
+                            <p className="text-gray-500">{cart.description}</p>
                             <span className="font-semibold">
-                              Price: ${gadget.price}
+                              Price: ${cart.price}
                             </span>
                           </div>
                         </div>
@@ -106,7 +101,14 @@ const Dashboard = () => {
                   </div>
                 </TabPanel>
                 <TabPanel>
-                  <h2>Any content 2</h2>
+                  <div className=" text-black">
+                    <div className="flex justify-between items-center">
+                      <div>
+                        <h2 className="text-xl font-semibold">Wishlist</h2>
+                      </div>
+                    </div>
+                    <div>h2</div>
+                  </div>
                 </TabPanel>
               </Tabs>
             </div>
