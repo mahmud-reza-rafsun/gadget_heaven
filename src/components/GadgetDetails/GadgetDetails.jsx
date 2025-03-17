@@ -1,13 +1,20 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import { FaRegHeart } from "react-icons/fa6";
 import { PiShoppingCartLight } from "react-icons/pi";
+import { setAddToCart } from "../../Utility";
 
 const GadgetDetails = () => {
   const data = useLoaderData();
-  const { category } = useParams();
-  const allGadgets = data.find((product) => product.id === parseInt(category));
+  const { id } = useParams();
+
+  const allGadgets = data.find((product) => product.id === parseInt(id));
+  console.log(allGadgets);
+
   const { name, image, price, rating, status, specification, description } =
     allGadgets || {};
+  const handleAddToCart = (allGadgets) => {
+    setAddToCart(allGadgets);
+  };
   return (
     <div className="mt-16 bg-[#9538e2] py-16">
       <div className=" max-w-6xl mx-auto h-[250px]">
@@ -90,7 +97,10 @@ const GadgetDetails = () => {
               </div>
               <div className="flex items-center gap-4">
                 <div>
-                  <button className="bg-[#9538e2] flex gap-2 items-center text-white px-4 py-2 cursor-pointer font-semibold text-sm rounded-3xl">
+                  <button
+                    onClick={() => handleAddToCart(allGadgets)}
+                    className="bg-[#9538e2] flex gap-2 items-center text-white px-4 py-2 cursor-pointer font-semibold text-sm rounded-3xl"
+                  >
                     <span>Add To Cart</span>
                     <span className="text-lg">
                       <PiShoppingCartLight />
