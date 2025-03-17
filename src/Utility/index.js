@@ -13,11 +13,17 @@ const getAddToCart = () => {
 const setAddToCart = (allGadgets) => {
   const storedCart = getAddToCart();
   const isExist = storedCart.find((cart) => cart.id === allGadgets.id);
-  console.log(isExist);
-  if (isExist) return toast.error("Already Added");
+  if (isExist) return toast.error(`${allGadgets.name} Already Added`);
   storedCart.push(allGadgets);
   localStorage.setItem("add-cart", JSON.stringify(storedCart));
-  toast.success("added");
+  toast.success(`${allGadgets.name} Successfully Added`);
 };
 
-export { setAddToCart, getAddToCart };
+const removeAddToCart = (id) => {
+  const storedAddToCart = getAddToCart();
+  const removeAddToCart = storedAddToCart.filter((items) => items.id !== id);
+  localStorage.removeItem("add-cart", JSON.stringify(removeAddToCart));
+  toast.success(`Successfully Added`);
+};
+
+export { setAddToCart, getAddToCart, removeAddToCart };

@@ -5,9 +5,9 @@ import { setAddToCart } from "../../Utility";
 
 const GadgetDetails = () => {
   const data = useLoaderData();
-  const { id } = useParams();
+  const { category } = useParams();
 
-  const allGadgets = data.find((product) => product.id === parseInt(id));
+  const allGadgets = data.find((product) => product.id == category);
   console.log(allGadgets);
 
   const { name, image, price, rating, status, specification, description } =

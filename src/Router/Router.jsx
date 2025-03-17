@@ -5,8 +5,6 @@ import GadgetCards from "../components/GadgetCards/GadgetCards";
 import Statistics from "../Page/Statistics";
 import Dashboard from "../Page/Dashboard";
 import GadgetDetails from "../components/GadgetDetails/GadgetDetails";
-import Wishlist from "../components/Wishlist/Wishlist";
-import Cart from "../components/Cart/Cart";
 
 const router = createBrowserRouter([
   {
@@ -31,7 +29,7 @@ const router = createBrowserRouter([
         ],
       },
       {
-        path: "/gadgetDetails/:id",
+        path: "/gadgetDetails/:category",
         element: <GadgetDetails />,
         loader: () => fetch(`../product.json`),
       },
