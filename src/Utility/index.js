@@ -46,9 +46,9 @@ const setAddWishlist = (allGadgets) => {
 };
 
 const removeWishlist = (id) => {
-  const storedAddToCart = getAddToCart();
-  const removeAddToCart = storedAddToCart.filter((items) => items.id !== id);
-  localStorage.removeItem("add-cart", JSON.stringify(removeAddToCart));
+  const storedWishlist = getAddToCart();
+  const removeAddToWishlist = storedWishlist.filter((items) => items.id !== id);
+  localStorage.removeItem("add-cart", JSON.stringify(removeAddToWishlist));
   toast.success(`Remove Successfully`);
 };
 

@@ -1,4 +1,4 @@
-import { NavLink, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { FiShoppingCart } from "react-icons/fi";
 import { FaRegHeart } from "react-icons/fa6";
 
@@ -11,7 +11,9 @@ const Navbar = () => {
     <div className={`${navBg} fixed top-0 z-50 w-full`}>
       <div className="navbar max-w-6xl mx-auto">
         <div className="navbar-start">
-          <a className={`font-bold text-xl ${navText}`}>Gadget Heaven</a>
+          <Link to={"/"} className={`font-bold text-xl ${navText}`}>
+            Gadget Heaven
+          </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className={`menu gap-5 menu-horizontal px-1 ${navText}`}>
